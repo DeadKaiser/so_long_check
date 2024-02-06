@@ -6,7 +6,7 @@
 /*   By: cosorio- < cosorio-@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 14:53:00 by cosorio-          #+#    #+#             */
-/*   Updated: 2024/02/06 17:09:02 by cosorio-         ###   ########.fr       */
+/*   Updated: 2024/02/06 17:25:38 by cosorio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ t_game	*initialize_game_struct(char **grid)
 	game->width = ft_strlen(grid[0]);
 	game->height = row_count(grid);
 	game->grid = grid;
-	game->steps = 1;
+	game->steps = 0;
 	game->coins = count_coins(game);
 	game->pnj_x = get_pnj_pos(game, 'x');
 	game->pnj_y = get_pnj_pos(game, 'y');
